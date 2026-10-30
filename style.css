@@ -1,434 +1,483 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Arimo:wght@400;500;600&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-  scroll-behavior: smooth;
-}
+  <meta name="description" content="Luna Stella Vieira, psicóloga clínica. Atendimento psicológico on-line para mulheres e adolescentes, com abordagem baseada na TCC e ACT.">
 
-body {
-  font-family: 'Arimo', sans-serif;
-  background: linear-gradient(to bottom, #f7f2eb, #fffaf6);
-  color: #4A2C2A;
-  line-height: 1.7;
-  position: relative;
-  overflow-x: hidden;
-}
+  <title>Luna Stella Vieira | Psicóloga Clínica</title>
 
-/* DECORAÇÕES */
-.decor {
-  position: fixed;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.12;
-  filter: saturate(85%) contrast(95%);
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.decor-top-left {
-  top: 90px;
-  left: 22px;
-  width: 95px;
-}
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
-.decor-top-right {
-  top: 130px;
-  right: 28px;
-  width: 105px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-.decor-middle-right {
-  top: 48%;
-  right: 26px;
-  width: 110px;
-  transform: translateY(-50%);
-}
+<body>
 
-.decor-bottom-left {
-  bottom: 100px;
-  left: 24px;
-  width: 95px;
-}
+  <!-- CABEÇALHO -->
+  <header class="topo">
 
-.decor-bottom-right {
-  bottom: 90px;
-  right: 24px;
-  width: 110px;
-}
+    <a href="#inicio" class="logo-area" aria-label="Luna Stella - Início">
+      <img src="logo_luna_stella_transparente.png" alt="Logo Luna Stella" class="logo">
+    </a>
 
-/* TOPO */
-.topo {
-  width: 100%;
-  padding: 14px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(247, 242, 235, 0.82);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 14px rgba(74, 44, 42, 0.06);
-}
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#abordagem">Abordagem</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato" class="menu-contato">Entre em contato</a>
+    </nav>
 
-.logo-area {
-  display: flex;
-  align-items: center;
-}
+  </header>
 
-.logo {
-  width: 92px;
-  height: auto;
-  display: block;
-}
 
-.menu {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-}
+  <main>
 
-.menu a {
-  text-decoration: none;
-  color: #4A2C2A;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  transition: 0.3s;
-  position: relative;
-}
+    <!-- APRESENTAÇÃO -->
+    <section id="inicio" class="hero">
 
-.menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: #B89B8C;
-  transition: 0.3s;
-}
+      <div class="hero-imagem">
+        <img src="luna_fotoia.jpeg" alt="Luna Stella Vieira, psicóloga clínica">
+        <div class="imagem-detalhe"></div>
+      </div>
 
-.menu a:hover {
-  color: #7a544d;
-}
+      <div class="hero-texto">
 
-.menu a:hover::after {
-  width: 100%;
-}
+        <span class="subtitulo">PSICOLOGIA CLÍNICA • ATENDIMENTO ON-LINE</span>
 
-/* GERAL */
-main,
-footer,
-.whatsapp,
-.topo {
-  position: relative;
-  z-index: 2;
-}
+        <h1>
+          Um espaço para
+          <span>se acolher,</span>
+          compreender e transformar.
+        </h1>
 
-main {
-  width: 100%;
-  padding: 30px 0 50px;
-}
+        <p>
+          Sou Luna Stella Vieira, psicóloga clínica.
+          Meu trabalho é oferecer um espaço seguro de
+          escuta, acolhimento e autoconhecimento,
+          respeitando sua história e seu tempo.
+        </p>
 
-section {
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid #f0e5dc;
-  border-radius: 24px;
-  box-shadow: 0 10px 28px rgba(74, 44, 42, 0.08);
-}
+        <p>
+          Atendimento individual para mulheres e adolescentes,
+          com uma abordagem humanizada e baseada na ciência.
+        </p>
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
-  color: #4A2C2A;
-  margin-bottom: 15px;
-}
+        <a
+          href="https://wa.me/5561991158479"
+          class="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vamos conversar
+          <span>↗</span>
+        </a>
 
-h1 {
-  font-size: 40px;
-  line-height: 1.2;
-}
+      </div>
 
-h2 {
-  font-size: 30px;
-}
+    </section>
 
-h3 {
-  font-size: 20px;
-}
 
-p {
-  font-size: 16px;
-  color: #5b403c;
-  margin-bottom: 14px;
-}
+    <!-- FRASE DE DESTAQUE -->
+    <section class="frase-destaque">
 
-ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+      <span class="frase-aspas">“</span>
 
-ul li {
-  margin-bottom: 8px;
-}
+      <p>
+        Você não precisa ter todas as respostas
+        para começar a cuidar de si.
+      </p>
 
-/* APRESENTAÇÃO */
-.apresentacao {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 40px;
-  align-items: center;
-  min-height: 65vh;
-}
+      <span class="frase-legenda">Um passo de cada vez, no seu tempo.</span>
 
-.apresentacao img {
-  width: 100%;
-  max-width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 12px 26px rgba(74, 44, 42, 0.15);
-}
+    </section>
 
-.texto-apresentacao {
-  max-width: 680px;
-}
 
-.botoes-hero,
-.botoes-centro {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 18px;
-}
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="secao sobre">
 
-.botoes-centro {
-  justify-content: center;
-}
+      <div class="sobre-conteudo">
 
-/* SOBRE */
-.pagina-topo {
-  text-align: center;
-  max-width: 900px;
-}
+        <div class="secao-titulo">
+          <span class="subtitulo">PRAZER, SOU A LUNA</span>
+          <h2>Sobre mim</h2>
+        </div>
 
-.sobre-layout {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 40px;
-  align-items: center;
-}
+        <p>
+          Sou Luna Stella Vieira, psicóloga clínica (CRP 01/30286),
+          com atuação baseada na Terapia Cognitivo-Comportamental (TCC)
+          e formação complementar em Terapia dos Esquemas.
+        </p>
 
-.sobre-foto img {
-  width: 100%;
-  max-width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 22px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 12px 26px rgba(74, 44, 42, 0.12);
-}
+        <p>
+          Acredito que cada pessoa carrega uma história única,
+          construída a partir de suas experiências, relações e vivências.
+          Por isso, considero essencial oferecer um espaço onde você
+          possa se expressar livremente, sem julgamentos.
+        </p>
 
-/* AJUDA */
-.grid-ajuda {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  margin-top: 22px;
-}
+        <p>
+          Meu papel é acompanhar você em um processo de
+          autodescoberta, fortalecimento emocional e desenvolvimento
+          pessoal, respeitando sua individualidade e seu momento de vida.
+        </p>
 
-.card-ajuda {
-  background: #fffaf6;
-  border: 1px solid #f0e5dc;
-  border-radius: 18px;
-  padding: 20px;
-  font-weight: 500;
-  box-shadow: 0 8px 18px rgba(74, 44, 42, 0.06);
-}
+        <p>
+          Os atendimentos acontecem de forma on-line, proporcionando
+          flexibilidade, conforto e acolhimento.
+        </p>
 
-/* FAQ */
-.faq-item {
-  background: #fffaf6;
-  border: 1px solid #f0e5dc;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
-}
+      </div>
 
-/* BOTÕES */
-.btn {
-  display: inline-block;
-  background: #4A2C2A;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 22px;
-  border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  transition: 0.3s;
-  box-shadow: 0 6px 16px rgba(74, 44, 42, 0.15);
-}
+      <div class="sobre-destaque">
+        <span class="destaque-icone">✦</span>
+        <h3>Um cuidado que respeita quem você é.</h3>
+        <p>
+          Técnica, escuta sensível e respeito à singularidade
+          de cada história.
+        </p>
+      </div>
 
-.btn:hover {
-  background: #6b4540;
-  transform: translateY(-2px);
-}
+    </section>
 
-/* CONTATO */
-.contato-box {
-  text-align: center;
-}
 
-/* CONTEÚDOS */
-.grid-conteudos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
+    <!-- PRIMEIROS PASSOS -->
+    <section id="primeiros-passos" class="secao passos">
 
-.card-conteudo {
-  background: #fffaf6;
-  border: 1px solid #f0e5dc;
-  border-radius: 18px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(74, 44, 42, 0.08);
-  transition: 0.3s ease;
-}
+      <div class="secao-titulo centralizado">
+        <span class="subtitulo">COMO COMEÇAR</span>
+        <h2>Seus primeiros passos</h2>
+        <p>
+          Iniciar a terapia pode ser mais simples do que você imagina.
+        </p>
+      </div>
 
-.card-conteudo:hover {
-  transform: translateY(-5px);
-}
+      <div class="passos-grid">
 
-.card-conteudo img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 15px;
-}
+        <article class="passo-card">
+          <span class="passo-numero">01</span>
+          <h3>Primeiro contato</h3>
+          <p>
+            Você entra em contato para conhecer o atendimento
+            e esclarecer suas primeiras dúvidas.
+          </p>
+        </article>
 
-.card-conteudo h3 {
-  min-height: 55px;
-  margin-bottom: 15px;
-}
+        <article class="passo-card">
+          <span class="passo-numero">02</span>
+          <h3>Primeira conversa</h3>
+          <p>
+            Um momento para nos conhecermos, conversar sobre
+            suas necessidades e compreender suas expectativas.
+          </p>
+        </article>
 
-/* FOOTER */
-footer {
-  margin-top: 40px;
-  background: #B89B8C;
-  color: #fff;
-  text-align: center;
-  padding: 28px;
-  font-size: 15px;
-}
+        <article class="passo-card">
+          <span class="passo-numero">03</span>
+          <h3>Início do processo</h3>
+          <p>
+            Construímos juntas um caminho de cuidado,
+            autoconhecimento e desenvolvimento emocional.
+          </p>
+        </article>
 
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 58px;
-  height: 58px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 26px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
-  transition: 0.3s;
-}
+      </div>
 
-.whatsapp:hover {
-  transform: scale(1.08);
-}
+    </section>
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  .apresentacao,
-  .sobre-layout {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 
-  .texto-apresentacao,
-  .sobre-texto {
-    margin: 0 auto;
-  }
+    <!-- ATENDIMENTO -->
+    <section id="atendimento" class="secao atendimento">
 
-  .botoes-hero {
-    justify-content: center;
-  }
-}
+      <div class="atendimento-texto">
 
-@media (max-width: 768px) {
-  .topo {
-    flex-direction: column;
-    gap: 14px;
-    padding: 18px 20px;
-  }
+        <span class="subtitulo">CUIDADO INDIVIDUALIZADO</span>
 
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
+        <h2>Um espaço pensado para você.</h2>
 
-  .logo {
-    width: 80px;
-  }
+        <p>
+          Os atendimentos são destinados a mulheres e adolescentes,
+          realizados de forma individual e totalmente on-line.
+        </p>
 
-  section {
-    margin: 20px 15px;
-    padding: 28px 22px;
-  }
+        <p>
+          O objetivo é proporcionar um ambiente acolhedor,
+          com escuta qualificada, respeito e cuidado com
+          a privacidade.
+        </p>
 
-  h1 {
-    font-size: 30px;
-  }
+      </div>
 
-  h2 {
-    font-size: 24px;
-  }
+      <div class="atendimento-lista">
 
-  .apresentacao img,
-  .sobre-foto img {
-    max-width: 220px;
-    height: 220px;
-  }
+        <div class="atendimento-item">
+          <span>✦</span>
+          <div>
+            <h3>Atendimento individual</h3>
+            <p>Um olhar atento às suas necessidades e experiências.</p>
+          </div>
+        </div>
 
-  .decor {
-    opacity: 0.08;
-  }
+        <div class="atendimento-item">
+          <span>✦</span>
+          <div>
+            <h3>Modalidade on-line</h3>
+            <p>Mais flexibilidade para cuidar de você de onde estiver.</p>
+          </div>
+        </div>
 
-  .decor-top-left,
-  .decor-top-right,
-  .decor-middle-right,
-  .decor-bottom-left,
-  .decor-bottom-right {
-    width: 70px;
-  }
+        <div class="atendimento-item">
+          <span>✦</span>
+          <div>
+            <h3>Acolhimento e respeito</h3>
+            <p>Um espaço de escuta, sem julgamentos e com sigilo profissional.</p>
+          </div>
+        </div>
 
-  .decor-top-left,
-  .decor-bottom-left {
-    left: 8px;
-  }
+      </div>
 
-  .decor-top-right,
-  .decor-middle-right,
-  .decor-bottom-right {
-    right: 8px;
-  }
-}
+    </section>
+
+
+    <!-- COMO POSSO AJUDAR -->
+    <section id="ajuda" class="secao ajuda">
+
+      <div class="secao-titulo centralizado">
+        <span class="subtitulo">CUIDADO EM DIFERENTES MOMENTOS</span>
+        <h2>Como posso ajudar?</h2>
+        <p>
+          A terapia pode auxiliar você a compreender e lidar
+          com diferentes questões emocionais e comportamentais.
+        </p>
+      </div>
+
+      <div class="ajuda-grid">
+
+        <article class="ajuda-card">
+          <span>01</span>
+          <h3>Ansiedade</h3>
+          <p>Ansiedade, preocupações excessivas e crises emocionais.</p>
+        </article>
+
+        <article class="ajuda-card">
+          <span>02</span>
+          <h3>Autoestima</h3>
+          <p>Baixa autoestima, insegurança e autocrítica excessiva.</p>
+        </article>
+
+        <article class="ajuda-card">
+          <span>03</span>
+          <h3>Relacionamentos</h3>
+          <p>Dificuldades nas relações e questões afetivas.</p>
+        </article>
+
+        <article class="ajuda-card">
+          <span>04</span>
+          <h3>Emoções</h3>
+          <p>Dificuldade em compreender e lidar com emoções intensas.</p>
+        </article>
+
+        <article class="ajuda-card">
+          <span>05</span>
+          <h3>Autoconhecimento</h3>
+          <p>Compreensão de padrões de pensamento e comportamento.</p>
+        </article>
+
+        <article class="ajuda-card">
+          <span>06</span>
+          <h3>Saúde emocional</h3>
+          <p>Estresse, sobrecarga emocional e desmotivação.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+  
+<!-- ABORDAGEM -->
+<section id="abordagem" class="secao abordagem">
+
+  <div class="secao-titulo">
+    <span class="subtitulo">MINHA FORMA DE TRABALHAR</span>
+    <h2>TCC e Terapia do Esquema</h2>
+  </div>
+
+  <p>
+    Meu trabalho é baseado principalmente na
+    <strong>Terapia Cognitivo-Comportamental (TCC)</strong>,
+    uma abordagem que busca compreender a relação entre
+    pensamentos, emoções e comportamentos, ajudando a
+    identificar padrões que podem influenciar a forma
+    como você se sente e se relaciona com o mundo.
+  </p>
+
+  <p>
+    Também utilizo conhecimentos da
+    <strong>Terapia do Esquema</strong>, uma abordagem que
+    busca compreender padrões emocionais e comportamentais
+    desenvolvidos ao longo da vida, especialmente a partir
+    das experiências da infância e das relações importantes.
+  </p>
+
+  <p>
+    Esses padrões, chamados esquemas, podem influenciar a
+    maneira como enxergamos a nós mesmos, interpretamos
+    nossas experiências e construímos nossos relacionamentos.
+    O processo terapêutico busca ampliar essa compreensão
+    e desenvolver formas mais saudáveis de lidar com
+    emoções, necessidades e experiências.
+  </p>
+
+  <div class="abordagem-destaque">
+
+    <h3>Na prática, trabalhamos para:</h3>
+
+    <div class="abordagem-grid">
+
+      <div>
+        <span>✦</span>
+        Reconhecer padrões emocionais e comportamentais.
+      </div>
+
+      <div>
+        <span>✦</span>
+        Compreender como experiências passadas influenciam o presente.
+      </div>
+
+      <div>
+        <span>✦</span>
+        Identificar e compreender necessidades emocionais.
+      </div>
+
+      <div>
+        <span>✦</span>
+        Desenvolver respostas mais saudáveis diante das situações da vida.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- DÚVIDAS FREQUENTES -->
+    <section id="duvidas" class="secao duvidas">
+
+      <div class="secao-titulo centralizado">
+        <span class="subtitulo">ESTAMOS AQUI PARA CONVERSAR</span>
+        <h2>Dúvidas frequentes</h2>
+        <p>
+          Algumas informações para ajudar você a dar o primeiro passo.
+        </p>
+      </div>
+
+      <div class="faq-lista">
+
+        <details class="faq-item">
+          <summary>Quanto tempo dura a sessão?</summary>
+          <p>
+            Cada sessão tem duração média de 40 a 50 minutos,
+            proporcionando um espaço de escuta e acolhimento.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Qual a frequência dos atendimentos?</summary>
+          <p>
+            As sessões costumam ser semanais, principalmente
+            no início. A frequência pode ser conversada de acordo
+            com as necessidades do acompanhamento.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Terapia on-line funciona mesmo?</summary>
+          <p>
+            A modalidade on-line permite realizar o acompanhamento
+            psicológico com conforto e flexibilidade, observando
+            os cuidados necessários com privacidade e sigilo.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Como funcionam os pagamentos?</summary>
+          <p>
+            Os pagamentos são realizados antes da sessão,
+            via Pix ou transferência. As condições e a frequência
+            dos atendimentos podem ser conversadas diretamente
+            com a psicóloga.
+          </p>
+        </details>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+
+      <span class="subtitulo">SEU PROCESSO PODE COMEÇAR AQUI</span>
+
+      <h2>Que tal dar o primeiro passo?</h2>
+
+      <p>
+        Se você deseja saber mais sobre o atendimento
+        ou esclarecer alguma dúvida, será um prazer conversar.
+      </p>
+
+      <a
+        href="https://wa.me/5561991158479"
+        class="btn btn-claro"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Entre em contato pelo WhatsApp
+        <span>↗</span>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+
+    <div class="rodape-logo">
+      <img src="logo_luna_stella_transparente.png" alt="Luna Stella">
+      <p>Psicologia clínica</p>
+    </div>
+
+    <p class="rodape-crp">Luna Stella Vieira • CRP 01/30286</p>
+
+    <p class="copyright">
+      © 2026 Luna Stella Psicóloga. Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a
+    href="https://wa.me/5561991158479"
+    class="whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Entre em contato pelo WhatsApp"
+  >
+    <span>✆</span>
+  </a>
+
+</body>
+</html>
