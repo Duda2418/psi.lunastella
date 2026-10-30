@@ -1,483 +1,907 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Luna Stella Vieira, psicóloga clínica. Atendimento psicológico on-line para mulheres e adolescentes, com abordagem baseada na TCC e ACT.">
-
-  <title>Luna Stella Vieira | Psicóloga Clínica</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <!-- CABEÇALHO -->
-  <header class="topo">
-
-    <a href="#inicio" class="logo-area" aria-label="Luna Stella - Início">
-      <img src="logo_luna_stella_transparente.png" alt="Logo Luna Stella" class="logo">
-    </a>
-
-    <nav class="menu" aria-label="Menu principal">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre mim</a>
-      <a href="#atendimento">Atendimento</a>
-      <a href="#abordagem">Abordagem</a>
-      <a href="#duvidas">Dúvidas</a>
-      <a href="#contato" class="menu-contato">Entre em contato</a>
-    </nav>
-
-  </header>
-
-
-  <main>
-
-    <!-- APRESENTAÇÃO -->
-    <section id="inicio" class="hero">
-
-      <div class="hero-imagem">
-        <img src="luna_fotoia.jpeg" alt="Luna Stella Vieira, psicóloga clínica">
-        <div class="imagem-detalhe"></div>
-      </div>
-
-      <div class="hero-texto">
-
-        <span class="subtitulo">PSICOLOGIA CLÍNICA • ATENDIMENTO ON-LINE</span>
-
-        <h1>
-          Um espaço para
-          <span>se acolher,</span>
-          compreender e transformar.
-        </h1>
-
-        <p>
-          Sou Luna Stella Vieira, psicóloga clínica.
-          Meu trabalho é oferecer um espaço seguro de
-          escuta, acolhimento e autoconhecimento,
-          respeitando sua história e seu tempo.
-        </p>
-
-        <p>
-          Atendimento individual para mulheres e adolescentes,
-          com uma abordagem humanizada e baseada na ciência.
-        </p>
-
-        <a
-          href="https://wa.me/5561991158479"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vamos conversar
-          <span>↗</span>
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- FRASE DE DESTAQUE -->
-    <section class="frase-destaque">
-
-      <span class="frase-aspas">“</span>
-
-      <p>
-        Você não precisa ter todas as respostas
-        para começar a cuidar de si.
-      </p>
-
-      <span class="frase-legenda">Um passo de cada vez, no seu tempo.</span>
-
-    </section>
-
-
-    <!-- SOBRE MIM -->
-    <section id="sobre" class="secao sobre">
-
-      <div class="sobre-conteudo">
-
-        <div class="secao-titulo">
-          <span class="subtitulo">PRAZER, SOU A LUNA</span>
-          <h2>Sobre mim</h2>
-        </div>
-
-        <p>
-          Sou Luna Stella Vieira, psicóloga clínica (CRP 01/30286),
-          com atuação baseada na Terapia Cognitivo-Comportamental (TCC)
-          e formação complementar em Terapia dos Esquemas.
-        </p>
-
-        <p>
-          Acredito que cada pessoa carrega uma história única,
-          construída a partir de suas experiências, relações e vivências.
-          Por isso, considero essencial oferecer um espaço onde você
-          possa se expressar livremente, sem julgamentos.
-        </p>
-
-        <p>
-          Meu papel é acompanhar você em um processo de
-          autodescoberta, fortalecimento emocional e desenvolvimento
-          pessoal, respeitando sua individualidade e seu momento de vida.
-        </p>
-
-        <p>
-          Os atendimentos acontecem de forma on-line, proporcionando
-          flexibilidade, conforto e acolhimento.
-        </p>
-
-      </div>
-
-      <div class="sobre-destaque">
-        <span class="destaque-icone">✦</span>
-        <h3>Um cuidado que respeita quem você é.</h3>
-        <p>
-          Técnica, escuta sensível e respeito à singularidade
-          de cada história.
-        </p>
-      </div>
-
-    </section>
-
-
-    <!-- PRIMEIROS PASSOS -->
-    <section id="primeiros-passos" class="secao passos">
-
-      <div class="secao-titulo centralizado">
-        <span class="subtitulo">COMO COMEÇAR</span>
-        <h2>Seus primeiros passos</h2>
-        <p>
-          Iniciar a terapia pode ser mais simples do que você imagina.
-        </p>
-      </div>
-
-      <div class="passos-grid">
-
-        <article class="passo-card">
-          <span class="passo-numero">01</span>
-          <h3>Primeiro contato</h3>
-          <p>
-            Você entra em contato para conhecer o atendimento
-            e esclarecer suas primeiras dúvidas.
-          </p>
-        </article>
-
-        <article class="passo-card">
-          <span class="passo-numero">02</span>
-          <h3>Primeira conversa</h3>
-          <p>
-            Um momento para nos conhecermos, conversar sobre
-            suas necessidades e compreender suas expectativas.
-          </p>
-        </article>
-
-        <article class="passo-card">
-          <span class="passo-numero">03</span>
-          <h3>Início do processo</h3>
-          <p>
-            Construímos juntas um caminho de cuidado,
-            autoconhecimento e desenvolvimento emocional.
-          </p>
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- ATENDIMENTO -->
-    <section id="atendimento" class="secao atendimento">
-
-      <div class="atendimento-texto">
-
-        <span class="subtitulo">CUIDADO INDIVIDUALIZADO</span>
-
-        <h2>Um espaço pensado para você.</h2>
-
-        <p>
-          Os atendimentos são destinados a mulheres e adolescentes,
-          realizados de forma individual e totalmente on-line.
-        </p>
-
-        <p>
-          O objetivo é proporcionar um ambiente acolhedor,
-          com escuta qualificada, respeito e cuidado com
-          a privacidade.
-        </p>
-
-      </div>
-
-      <div class="atendimento-lista">
-
-        <div class="atendimento-item">
-          <span>✦</span>
-          <div>
-            <h3>Atendimento individual</h3>
-            <p>Um olhar atento às suas necessidades e experiências.</p>
-          </div>
-        </div>
-
-        <div class="atendimento-item">
-          <span>✦</span>
-          <div>
-            <h3>Modalidade on-line</h3>
-            <p>Mais flexibilidade para cuidar de você de onde estiver.</p>
-          </div>
-        </div>
-
-        <div class="atendimento-item">
-          <span>✦</span>
-          <div>
-            <h3>Acolhimento e respeito</h3>
-            <p>Um espaço de escuta, sem julgamentos e com sigilo profissional.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- COMO POSSO AJUDAR -->
-    <section id="ajuda" class="secao ajuda">
-
-      <div class="secao-titulo centralizado">
-        <span class="subtitulo">CUIDADO EM DIFERENTES MOMENTOS</span>
-        <h2>Como posso ajudar?</h2>
-        <p>
-          A terapia pode auxiliar você a compreender e lidar
-          com diferentes questões emocionais e comportamentais.
-        </p>
-      </div>
-
-      <div class="ajuda-grid">
-
-        <article class="ajuda-card">
-          <span>01</span>
-          <h3>Ansiedade</h3>
-          <p>Ansiedade, preocupações excessivas e crises emocionais.</p>
-        </article>
-
-        <article class="ajuda-card">
-          <span>02</span>
-          <h3>Autoestima</h3>
-          <p>Baixa autoestima, insegurança e autocrítica excessiva.</p>
-        </article>
-
-        <article class="ajuda-card">
-          <span>03</span>
-          <h3>Relacionamentos</h3>
-          <p>Dificuldades nas relações e questões afetivas.</p>
-        </article>
-
-        <article class="ajuda-card">
-          <span>04</span>
-          <h3>Emoções</h3>
-          <p>Dificuldade em compreender e lidar com emoções intensas.</p>
-        </article>
-
-        <article class="ajuda-card">
-          <span>05</span>
-          <h3>Autoconhecimento</h3>
-          <p>Compreensão de padrões de pensamento e comportamento.</p>
-        </article>
-
-        <article class="ajuda-card">
-          <span>06</span>
-          <h3>Saúde emocional</h3>
-          <p>Estresse, sobrecarga emocional e desmotivação.</p>
-        </article>
-
-      </div>
-
-    </section>
-
-
-  
-<!-- ABORDAGEM -->
-<section id="abordagem" class="secao abordagem">
-
-  <div class="secao-titulo">
-    <span class="subtitulo">MINHA FORMA DE TRABALHAR</span>
-    <h2>TCC e Terapia do Esquema</h2>
-  </div>
-
-  <p>
-    Meu trabalho é baseado principalmente na
-    <strong>Terapia Cognitivo-Comportamental (TCC)</strong>,
-    uma abordagem que busca compreender a relação entre
-    pensamentos, emoções e comportamentos, ajudando a
-    identificar padrões que podem influenciar a forma
-    como você se sente e se relaciona com o mundo.
-  </p>
-
-  <p>
-    Também utilizo conhecimentos da
-    <strong>Terapia do Esquema</strong>, uma abordagem que
-    busca compreender padrões emocionais e comportamentais
-    desenvolvidos ao longo da vida, especialmente a partir
-    das experiências da infância e das relações importantes.
-  </p>
-
-  <p>
-    Esses padrões, chamados esquemas, podem influenciar a
-    maneira como enxergamos a nós mesmos, interpretamos
-    nossas experiências e construímos nossos relacionamentos.
-    O processo terapêutico busca ampliar essa compreensão
-    e desenvolver formas mais saudáveis de lidar com
-    emoções, necessidades e experiências.
-  </p>
-
-  <div class="abordagem-destaque">
-
-    <h3>Na prática, trabalhamos para:</h3>
-
-    <div class="abordagem-grid">
-
-      <div>
-        <span>✦</span>
-        Reconhecer padrões emocionais e comportamentais.
-      </div>
-
-      <div>
-        <span>✦</span>
-        Compreender como experiências passadas influenciam o presente.
-      </div>
-
-      <div>
-        <span>✦</span>
-        Identificar e compreender necessidades emocionais.
-      </div>
-
-      <div>
-        <span>✦</span>
-        Desenvolver respostas mais saudáveis diante das situações da vida.
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-    <!-- DÚVIDAS FREQUENTES -->
-    <section id="duvidas" class="secao duvidas">
-
-      <div class="secao-titulo centralizado">
-        <span class="subtitulo">ESTAMOS AQUI PARA CONVERSAR</span>
-        <h2>Dúvidas frequentes</h2>
-        <p>
-          Algumas informações para ajudar você a dar o primeiro passo.
-        </p>
-      </div>
-
-      <div class="faq-lista">
-
-        <details class="faq-item">
-          <summary>Quanto tempo dura a sessão?</summary>
-          <p>
-            Cada sessão tem duração média de 40 a 50 minutos,
-            proporcionando um espaço de escuta e acolhimento.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Qual a frequência dos atendimentos?</summary>
-          <p>
-            As sessões costumam ser semanais, principalmente
-            no início. A frequência pode ser conversada de acordo
-            com as necessidades do acompanhamento.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Terapia on-line funciona mesmo?</summary>
-          <p>
-            A modalidade on-line permite realizar o acompanhamento
-            psicológico com conforto e flexibilidade, observando
-            os cuidados necessários com privacidade e sigilo.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como funcionam os pagamentos?</summary>
-          <p>
-            Os pagamentos são realizados antes da sessão,
-            via Pix ou transferência. As condições e a frequência
-            dos atendimentos podem ser conversadas diretamente
-            com a psicóloga.
-          </p>
-        </details>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTATO -->
-    <section id="contato" class="contato">
-
-      <span class="subtitulo">SEU PROCESSO PODE COMEÇAR AQUI</span>
-
-      <h2>Que tal dar o primeiro passo?</h2>
-
-      <p>
-        Se você deseja saber mais sobre o atendimento
-        ou esclarecer alguma dúvida, será um prazer conversar.
-      </p>
-
-      <a
-        href="https://wa.me/5561991158479"
-        class="btn btn-claro"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Entre em contato pelo WhatsApp
-        <span>↗</span>
-      </a>
-
-    </section>
-
-  </main>
-
-
-  <!-- RODAPÉ -->
-  <footer class="rodape">
-
-    <div class="rodape-logo">
-      <img src="logo_luna_stella_transparente.png" alt="Luna Stella">
-      <p>Psicologia clínica</p>
-    </div>
-
-    <p class="rodape-crp">Luna Stella Vieira • CRP 01/30286</p>
-
-    <p class="copyright">
-      © 2026 Luna Stella Psicóloga. Todos os direitos reservados.
-    </p>
-
-  </footer>
-
-
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a
-    href="https://wa.me/5561991158479"
-    class="whatsapp"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Entre em contato pelo WhatsApp"
-  >
-    <span>✆</span>
-  </a>
-
-</body>
-</html>
+/* =====================================
+   LUNA STELLA | IDENTIDADE VISUAL
+===================================== */
+
+:root {
+  --bege: #F6F0E9;
+  --branco: #FFFCF9;
+  --rose-claro: #E8D8CE;
+  --rose: #B89B8C;
+  --marrom: #795C54;
+  --marrom-escuro: #49332F;
+  --texto: #6B5550;
+  --borda: #EDE2DA;
+
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-texto: 'DM Sans', sans-serif;
+
+  --sombra: 0 12px 35px rgba(73, 51, 47, 0.07);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  background: var(--bege);
+  color: var(--texto);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.topo {
+  width: 100%;
+  min-height: 88px;
+  padding: 12px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(255, 252, 249, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(184, 155, 140, 0.18);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  font-family: var(--fonte-texto);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--marrom-escuro);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  color: var(--rose);
+}
+
+.menu .menu-contato {
+  padding: 11px 21px;
+  background: var(--marrom-escuro);
+  color: white;
+  border-radius: 5px;
+}
+
+.menu .menu-contato:hover {
+  background: var(--rose);
+}
+
+/* =====================================
+   ESTRUTURA GERAL
+===================================== */
+
+main {
+  width: 100%;
+}
+
+.secao {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 35px;
+}
+
+.subtitulo {
+  display: block;
+  font-family: var(--fonte-texto);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--marrom-escuro);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(38px, 5vw, 58px);
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 40px);
+  margin-bottom: 22px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  color: var(--texto);
+  margin-bottom: 17px;
+}
+
+.secao-titulo {
+  margin-bottom: 35px;
+}
+
+.secao-titulo p {
+  max-width: 600px;
+}
+
+.centralizado {
+  text-align: center;
+}
+
+.centralizado p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  background: var(--marrom-escuro);
+  color: white;
+
+  padding: 15px 25px;
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn span {
+  font-size: 17px;
+}
+
+.btn:hover {
+  background: var(--rose);
+  transform: translateY(-3px);
+  box-shadow: var(--sombra);
+}
+
+/* =====================================
+   APRESENTAÇÃO
+===================================== */
+
+.hero {
+  width: 100%;
+  max-width: 1250px;
+  min-height: 610px;
+  margin: 0 auto;
+
+  padding: 75px 65px;
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.hero-imagem {
+  position: relative;
+  max-width: 390px;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-imagem img {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 190px 190px 12px 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.imagem-detalhe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--rose);
+  border-radius: 190px 190px 12px 12px;
+  top: 17px;
+  left: 17px;
+  z-index: 1;
+}
+
+.hero-texto {
+  max-width: 610px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-texto h1 {
+  margin-bottom: 25px;
+}
+
+.hero-texto h1 span {
+  color: var(--rose);
+  font-style: italic;
+}
+
+.hero-texto p {
+  max-width: 550px;
+}
+
+.hero-texto .btn {
+  margin-top: 12px;
+}
+
+/* =====================================
+   FRASE DE DESTAQUE
+===================================== */
+
+.frase-destaque {
+  background: var(--rose-claro);
+  text-align: center;
+  padding: 65px 25px;
+}
+
+.frase-aspas {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 65px;
+  line-height: 0.8;
+  color: var(--rose);
+}
+
+.frase-destaque p {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(23px, 3vw, 32px);
+  color: var(--marrom-escuro);
+  margin: 15px auto;
+}
+
+.frase-legenda {
+  font-size: 12px;
+  color: var(--marrom);
+  letter-spacing: 1px;
+}
+
+/* =====================================
+   SOBRE MIM
+===================================== */
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.sobre-conteudo p {
+  line-height: 1.9;
+}
+
+.sobre-destaque {
+  background: var(--branco);
+  padding: 45px 35px;
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra);
+  text-align: center;
+}
+
+.destaque-icone {
+  font-size: 35px;
+  color: var(--rose);
+}
+
+.sobre-destaque h3 {
+  font-size: 27px;
+  margin: 20px 0;
+}
+
+.sobre-destaque p {
+  margin: 0;
+}
+
+/* =====================================
+   PRIMEIROS PASSOS
+===================================== */
+
+.passos {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.passos .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.passos-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.passo-card {
+  padding: 35px 28px;
+  background: var(--bege);
+  border: 1px solid var(--borda);
+  transition: 0.3s;
+}
+
+.passo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra);
+}
+
+.passo-numero {
+  font-family: var(--fonte-titulo);
+  font-size: 35px;
+  color: var(--rose);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.passo-card p {
+  margin-bottom: 0;
+}
+
+/* =====================================
+   ATENDIMENTO
+===================================== */
+
+.atendimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.atendimento-texto h2 {
+  max-width: 440px;
+}
+
+.atendimento-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.atendimento-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.atendimento-item > span {
+  font-size: 24px;
+  color: var(--rose);
+}
+
+.atendimento-item h3 {
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.atendimento-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* =====================================
+   COMO POSSO AJUDAR
+===================================== */
+
+.ajuda {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.ajuda .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.ajuda-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ajuda-card {
+  padding: 30px;
+  border: 1px solid var(--borda);
+  background: var(--branco);
+  transition: 0.3s;
+}
+
+.ajuda-card:hover {
+  border-color: var(--rose);
+  transform: translateY(-4px);
+  box-shadow: var(--sombra);
+}
+
+.ajuda-card > span {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 28px;
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+.ajuda-card h3 {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ajuda-card p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* =====================================
+   ABORDAGEM
+===================================== */
+
+.abordagem {
+  max-width: 900px;
+}
+
+.abordagem > p {
+  line-height: 2;
+}
+
+.abordagem strong {
+  color: var(--marrom-escuro);
+}
+
+.abordagem-destaque {
+  background: var(--rose-claro);
+  padding: 35px;
+  margin-top: 35px;
+}
+
+.abordagem-destaque h3 {
+  margin-bottom: 25px;
+}
+
+.abordagem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.abordagem-grid div {
+  font-size: 14px;
+  color: var(--marrom-escuro);
+}
+
+.abordagem-grid span {
+  color: var(--marrom);
+  margin-right: 8px;
+}
+
+/* =====================================
+   DÚVIDAS FREQUENTES
+===================================== */
+
+.duvidas {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.duvidas .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.faq-lista {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq-item {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  margin-bottom: 13px;
+  transition: 0.3s;
+}
+
+.faq-item[open] {
+  border-color: var(--rose);
+}
+
+.faq-item summary {
+  padding: 22px 25px;
+  cursor: pointer;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  color: var(--marrom-escuro);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 23px;
+  color: var(--rose);
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  padding: 0 25px 22px;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* =====================================
+   CONTATO
+===================================== */
+
+.contato {
+  background: var(--marrom-escuro);
+  text-align: center;
+  padding: 90px 25px;
+}
+
+.contato .subtitulo {
+  color: var(--rose-claro);
+}
+
+.contato h2 {
+  color: var(--branco);
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.contato p {
+  color: rgba(255, 252, 249, 0.8);
+  max-width: 580px;
+  margin: 0 auto 30px;
+}
+
+.btn-claro {
+  background: var(--branco);
+  color: var(--marrom-escuro);
+}
+
+.btn-claro:hover {
+  background: var(--rose-claro);
+  color: var(--marrom-escuro);
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+.rodape {
+  padding: 45px 20px 25px;
+  text-align: center;
+  background: var(--branco);
+}
+
+.rodape-logo img {
+  width: 90px;
+  height: auto;
+}
+
+.rodape-logo p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.rodape-crp {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.copyright {
+  border-top: 1px solid var(--borda);
+  padding-top: 20px;
+  margin: 25px auto 0;
+  font-size: 11px;
+}
+
+/* =====================================
+   WHATSAPP FLUTUANTE
+===================================== */
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1000;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #537C65;
+  color: white;
+  border-radius: 50%;
+
+  font-size: 28px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.08);
+}
+
+/* =====================================
+   ACESSIBILIDADE
+===================================== */
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--marrom);
+  outline-offset: 4px;
+}
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 1050px) {
+
+  .topo {
+    padding: 12px 4%;
+  }
+
+  .menu {
+    gap: 17px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .hero {
+    gap: 45px;
+    padding: 65px 40px;
+  }
+
+  .sobre,
+  .atendimento {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 15px;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .menu .menu-contato {
+    padding: 8px 13px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 55px 25px 70px;
+    text-align: center;
+  }
+
+  .hero-imagem {
+    max-width: 280px;
+  }
+
+  .hero-imagem img {
+    height: 350px;
+  }
+
+  .hero-texto {
+    margin: auto;
+  }
+
+  .hero-texto p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre,
+  .atendimento {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-destaque {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .passos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ajuda-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secao {
+    padding: 75px 25px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .topo {
+    min-height: auto;
+    padding: 10px 12px 14px;
+  }
+
+  .menu {
+    gap: 10px 14px;
+  }
+
+  .menu a {
+    font-size: 10px;
+  }
+
+  .menu .menu-contato {
+    padding: 7px 10px;
+  }
+
+  .hero {
+    padding: 45px 22px 60px;
+  }
+
+  .hero-imagem {
+    max-width: 235px;
+  }
+
+  .hero-imagem img {
+    height: 295px;
+  }
+
+  .hero-texto h1 {
+    font-size: 37px;
+  }
+
+  .secao {
+    padding: 65px 22px;
+  }
+
+  .ajuda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abordagem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abordagem-destaque {
+    padding: 25px 20px;
+  }
+
+  .frase-destaque {
+    padding: 55px 20px;
+  }
+
+  .faq-item summary {
+    padding: 18px;
+    font-size: 13px;
+  }
+
+  .faq-item p {
+    padding: 0 18px 18px;
+  }
+
+  .contato {
+    padding: 70px 22px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 13px 17px;
+  }
+
+  .whatsapp {
+    width: 49px;
+    height: 49px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
