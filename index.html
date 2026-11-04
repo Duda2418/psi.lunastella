@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,6 +8,19 @@
   <meta name="description" content="Luna Stella Vieira, psicóloga clínica. Atendimento psicológico on-line para mulheres e adolescentes, com abordagem baseada na TCC e ACT.">
 
   <title>Luna Stella Vieira | Psicóloga Clínica</title>
+
+  <!-- GOOGLE TAG -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WVXCHTJP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'GT-WVXCHTJP');
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +88,7 @@
           class="btn"
           target="_blank"
           rel="noopener noreferrer"
+          data-track="whatsapp"
         >
           Vamos conversar
           <span>↗</span>
@@ -301,73 +315,71 @@
     </section>
 
 
-  
-<!-- ABORDAGEM -->
-<section id="abordagem" class="secao abordagem">
+    <!-- ABORDAGEM -->
+    <section id="abordagem" class="secao abordagem">
 
-  <div class="secao-titulo">
-    <span class="subtitulo">MINHA FORMA DE TRABALHAR</span>
-    <h2>TCC e Terapia do Esquema</h2>
-  </div>
-
-  <p>
-    Meu trabalho é baseado principalmente na
-    <strong>Terapia Cognitivo-Comportamental (TCC)</strong>,
-    uma abordagem que busca compreender a relação entre
-    pensamentos, emoções e comportamentos, ajudando a
-    identificar padrões que podem influenciar a forma
-    como você se sente e se relaciona com o mundo.
-  </p>
-
-  <p>
-    Também utilizo conhecimentos da
-    <strong>Terapia do Esquema</strong>, uma abordagem que
-    busca compreender padrões emocionais e comportamentais
-    desenvolvidos ao longo da vida, especialmente a partir
-    das experiências da infância e das relações importantes.
-  </p>
-
-  <p>
-    Esses padrões, chamados esquemas, podem influenciar a
-    maneira como enxergamos a nós mesmos, interpretamos
-    nossas experiências e construímos nossos relacionamentos.
-    O processo terapêutico busca ampliar essa compreensão
-    e desenvolver formas mais saudáveis de lidar com
-    emoções, necessidades e experiências.
-  </p>
-
-  <div class="abordagem-destaque">
-
-    <h3>Na prática, trabalhamos para:</h3>
-
-    <div class="abordagem-grid">
-
-      <div>
-        <span>✦</span>
-        Reconhecer padrões emocionais e comportamentais.
+      <div class="secao-titulo">
+        <span class="subtitulo">MINHA FORMA DE TRABALHAR</span>
+        <h2>TCC e Terapia do Esquema</h2>
       </div>
 
-      <div>
-        <span>✦</span>
-        Compreender como experiências passadas influenciam o presente.
+      <p>
+        Meu trabalho é baseado principalmente na
+        <strong>Terapia Cognitivo-Comportamental (TCC)</strong>,
+        uma abordagem que busca compreender a relação entre
+        pensamentos, emoções e comportamentos, ajudando a
+        identificar padrões que podem influenciar a forma
+        como você se sente e se relaciona com o mundo.
+      </p>
+
+      <p>
+        Também utilizo conhecimentos da
+        <strong>Terapia do Esquema</strong>, uma abordagem que
+        busca compreender padrões emocionais e comportamentais
+        desenvolvidos ao longo da vida, especialmente a partir
+        das experiências da infância e das relações importantes.
+      </p>
+
+      <p>
+        Esses padrões, chamados esquemas, podem influenciar a
+        maneira como enxergamos a nós mesmos, interpretamos
+        nossas experiências e construímos nossos relacionamentos.
+        O processo terapêutico busca ampliar essa compreensão
+        e desenvolver formas mais saudáveis de lidar com
+        emoções, necessidades e experiências.
+      </p>
+
+      <div class="abordagem-destaque">
+
+        <h3>Na prática, trabalhamos para:</h3>
+
+        <div class="abordagem-grid">
+
+          <div>
+            <span>✦</span>
+            Reconhecer padrões emocionais e comportamentais.
+          </div>
+
+          <div>
+            <span>✦</span>
+            Compreender como experiências passadas influenciam o presente.
+          </div>
+
+          <div>
+            <span>✦</span>
+            Identificar e compreender necessidades emocionais.
+          </div>
+
+          <div>
+            <span>✦</span>
+            Desenvolver respostas mais saudáveis diante das situações da vida.
+          </div>
+
+        </div>
+
       </div>
 
-      <div>
-        <span>✦</span>
-        Identificar e compreender necessidades emocionais.
-      </div>
-
-      <div>
-        <span>✦</span>
-        Desenvolver respostas mais saudáveis diante das situações da vida.
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
+    </section>
 
 
     <!-- DÚVIDAS FREQUENTES -->
@@ -441,6 +453,7 @@
         class="btn btn-claro"
         target="_blank"
         rel="noopener noreferrer"
+        data-track="whatsapp"
       >
         Entre em contato pelo WhatsApp
         <span>↗</span>
@@ -475,9 +488,29 @@
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Entre em contato pelo WhatsApp"
+    data-track="whatsapp"
   >
     <span>✆</span>
   </a>
 
+
+  <!-- RASTREAMENTO DOS CLIQUES NO WHATSAPP -->
+  <script>
+    document.querySelectorAll('[data-track="whatsapp"]').forEach(function(botao) {
+
+      botao.addEventListener('click', function() {
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'whatsapp_click', {
+            transport_type: 'beacon'
+          });
+        }
+
+      });
+
+    });
+  </script>
+
 </body>
 </html>
+```
