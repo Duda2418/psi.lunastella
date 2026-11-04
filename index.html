@@ -438,18 +438,27 @@
     <span>✆</span>
   </a>
 
-  <!-- RASTREAMENTO DOS CLIQUES NO WHATSAPP -->
-  <script>
-    document.querySelectorAll('[data-track="whatsapp"]').forEach(function(botao) {
-      botao.addEventListener('click', function() {
-        if (typeof gtag === 'function') {
-          gtag('event', 'whatsapp_click', {
-            transport_type: 'beacon'
-          });
-        }
-      });
+  <!-- RASTREAMENTO DE CLIQUES NO WHATSAPP - GA4 + GOOGLE ADS -->
+<script>
+  document.querySelectorAll('[data-track="whatsapp"]').forEach(function(botao) {
+    botao.addEventListener('click', function() {
+      if (typeof gtag === 'function') {
+
+        // Evento para o Google Analytics 4
+        gtag('event', 'whatsapp_click', {
+          transport_type: 'beacon'
+        });
+
+        // Conversão para o Google Ads
+        gtag('event', 'conversion', {
+          send_to: 'AW-18544255528/kDCvCImQkrIdEKjEy4pF',
+          transport_type: 'beacon'
+        });
+
+      }
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
