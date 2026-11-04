@@ -1,0 +1,907 @@
+
+/* =====================================
+   LUNA STELLA | IDENTIDADE VISUAL
+===================================== */
+
+:root {
+  --bege: #F6F0E9;
+  --branco: #FFFCF9;
+  --rose-claro: #E8D8CE;
+  --rose: #B89B8C;
+  --marrom: #795C54;
+  --marrom-escuro: #49332F;
+  --texto: #6B5550;
+  --borda: #EDE2DA;
+
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-texto: 'DM Sans', sans-serif;
+
+  --sombra: 0 12px 35px rgba(73, 51, 47, 0.07);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  background: var(--bege);
+  color: var(--texto);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* =====================================
+   CABEÇALHO
+===================================== */
+
+.topo {
+  width: 100%;
+  min-height: 88px;
+  padding: 12px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(255, 252, 249, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(184, 155, 140, 0.18);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  font-family: var(--fonte-texto);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--marrom-escuro);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  color: var(--rose);
+}
+
+.menu .menu-contato {
+  padding: 11px 21px;
+  background: var(--marrom-escuro);
+  color: white;
+  border-radius: 5px;
+}
+
+.menu .menu-contato:hover {
+  background: var(--rose);
+}
+
+/* =====================================
+   ESTRUTURA GERAL
+===================================== */
+
+main {
+  width: 100%;
+}
+
+.secao {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 35px;
+}
+
+.subtitulo {
+  display: block;
+  font-family: var(--fonte-texto);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--marrom-escuro);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(38px, 5vw, 58px);
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 40px);
+  margin-bottom: 22px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  color: var(--texto);
+  margin-bottom: 17px;
+}
+
+.secao-titulo {
+  margin-bottom: 35px;
+}
+
+.secao-titulo p {
+  max-width: 600px;
+}
+
+.centralizado {
+  text-align: center;
+}
+
+.centralizado p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  background: var(--marrom-escuro);
+  color: white;
+
+  padding: 15px 25px;
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn span {
+  font-size: 17px;
+}
+
+.btn:hover {
+  background: var(--rose);
+  transform: translateY(-3px);
+  box-shadow: var(--sombra);
+}
+
+/* =====================================
+   APRESENTAÇÃO
+===================================== */
+
+.hero {
+  width: 100%;
+  max-width: 1250px;
+  min-height: 610px;
+  margin: 0 auto;
+
+  padding: 75px 65px;
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.hero-imagem {
+  position: relative;
+  max-width: 390px;
+  width: 100%;
+  margin: auto;
+}
+
+.hero-imagem img {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 190px 190px 12px 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.imagem-detalhe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--rose);
+  border-radius: 190px 190px 12px 12px;
+  top: 17px;
+  left: 17px;
+  z-index: 1;
+}
+
+.hero-texto {
+  max-width: 610px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-texto h1 {
+  margin-bottom: 25px;
+}
+
+.hero-texto h1 span {
+  color: var(--rose);
+  font-style: italic;
+}
+
+.hero-texto p {
+  max-width: 550px;
+}
+
+.hero-texto .btn {
+  margin-top: 12px;
+}
+
+/* =====================================
+   FRASE DE DESTAQUE
+===================================== */
+
+.frase-destaque {
+  background: var(--rose-claro);
+  text-align: center;
+  padding: 65px 25px;
+}
+
+.frase-aspas {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 65px;
+  line-height: 0.8;
+  color: var(--rose);
+}
+
+.frase-destaque p {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(23px, 3vw, 32px);
+  color: var(--marrom-escuro);
+  margin: 15px auto;
+}
+
+.frase-legenda {
+  font-size: 12px;
+  color: var(--marrom);
+  letter-spacing: 1px;
+}
+
+/* =====================================
+   SOBRE MIM
+===================================== */
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.sobre-conteudo p {
+  line-height: 1.9;
+}
+
+.sobre-destaque {
+  background: var(--branco);
+  padding: 45px 35px;
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra);
+  text-align: center;
+}
+
+.destaque-icone {
+  font-size: 35px;
+  color: var(--rose);
+}
+
+.sobre-destaque h3 {
+  font-size: 27px;
+  margin: 20px 0;
+}
+
+.sobre-destaque p {
+  margin: 0;
+}
+
+/* =====================================
+   PRIMEIROS PASSOS
+===================================== */
+
+.passos {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.passos .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.passos-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.passo-card {
+  padding: 35px 28px;
+  background: var(--bege);
+  border: 1px solid var(--borda);
+  transition: 0.3s;
+}
+
+.passo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra);
+}
+
+.passo-numero {
+  font-family: var(--fonte-titulo);
+  font-size: 35px;
+  color: var(--rose);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.passo-card p {
+  margin-bottom: 0;
+}
+
+/* =====================================
+   ATENDIMENTO
+===================================== */
+
+.atendimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.atendimento-texto h2 {
+  max-width: 440px;
+}
+
+.atendimento-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.atendimento-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.atendimento-item > span {
+  font-size: 24px;
+  color: var(--rose);
+}
+
+.atendimento-item h3 {
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.atendimento-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* =====================================
+   COMO POSSO AJUDAR
+===================================== */
+
+.ajuda {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.ajuda .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.ajuda-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ajuda-card {
+  padding: 30px;
+  border: 1px solid var(--borda);
+  background: var(--branco);
+  transition: 0.3s;
+}
+
+.ajuda-card:hover {
+  border-color: var(--rose);
+  transform: translateY(-4px);
+  box-shadow: var(--sombra);
+}
+
+.ajuda-card > span {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 28px;
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+.ajuda-card h3 {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ajuda-card p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* =====================================
+   ABORDAGEM
+===================================== */
+
+.abordagem {
+  max-width: 900px;
+}
+
+.abordagem > p {
+  line-height: 2;
+}
+
+.abordagem strong {
+  color: var(--marrom-escuro);
+}
+
+.abordagem-destaque {
+  background: var(--rose-claro);
+  padding: 35px;
+  margin-top: 35px;
+}
+
+.abordagem-destaque h3 {
+  margin-bottom: 25px;
+}
+
+.abordagem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.abordagem-grid div {
+  font-size: 14px;
+  color: var(--marrom-escuro);
+}
+
+.abordagem-grid span {
+  color: var(--marrom);
+  margin-right: 8px;
+}
+
+/* =====================================
+   DÚVIDAS FREQUENTES
+===================================== */
+
+.duvidas {
+  max-width: 100%;
+  background: var(--branco);
+}
+
+.duvidas .secao-titulo {
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.faq-lista {
+  max-width: 850px;
+  margin: auto;
+}
+
+.faq-item {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  margin-bottom: 13px;
+  transition: 0.3s;
+}
+
+.faq-item[open] {
+  border-color: var(--rose);
+}
+
+.faq-item summary {
+  padding: 22px 25px;
+  cursor: pointer;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  color: var(--marrom-escuro);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 23px;
+  color: var(--rose);
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  padding: 0 25px 22px;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* =====================================
+   CONTATO
+===================================== */
+
+.contato {
+  background: var(--marrom-escuro);
+  text-align: center;
+  padding: 90px 25px;
+}
+
+.contato .subtitulo {
+  color: var(--rose-claro);
+}
+
+.contato h2 {
+  color: var(--branco);
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.contato p {
+  color: rgba(255, 252, 249, 0.8);
+  max-width: 580px;
+  margin: 0 auto 30px;
+}
+
+.btn-claro {
+  background: var(--branco);
+  color: var(--marrom-escuro);
+}
+
+.btn-claro:hover {
+  background: var(--rose-claro);
+  color: var(--marrom-escuro);
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+.rodape {
+  padding: 45px 20px 25px;
+  text-align: center;
+  background: var(--branco);
+}
+
+.rodape-logo img {
+  width: 90px;
+  height: auto;
+}
+
+.rodape-logo p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.rodape-crp {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.copyright {
+  border-top: 1px solid var(--borda);
+  padding-top: 20px;
+  margin: 25px auto 0;
+  font-size: 11px;
+}
+
+/* =====================================
+   WHATSAPP FLUTUANTE
+===================================== */
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1000;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #537C65;
+  color: white;
+  border-radius: 50%;
+
+  font-size: 28px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.08);
+}
+
+/* =====================================
+   ACESSIBILIDADE
+===================================== */
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--marrom);
+  outline-offset: 4px;
+}
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 1050px) {
+
+  .topo {
+    padding: 12px 4%;
+  }
+
+  .menu {
+    gap: 17px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .hero {
+    gap: 45px;
+    padding: 65px 40px;
+  }
+
+  .sobre,
+  .atendimento {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .topo {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 15px;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .menu .menu-contato {
+    padding: 8px 13px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 55px 25px 70px;
+    text-align: center;
+  }
+
+  .hero-imagem {
+    max-width: 280px;
+  }
+
+  .hero-imagem img {
+    height: 350px;
+  }
+
+  .hero-texto {
+    margin: auto;
+  }
+
+  .hero-texto p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre,
+  .atendimento {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-destaque {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .passos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ajuda-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secao {
+    padding: 75px 25px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .topo {
+    min-height: auto;
+    padding: 10px 12px 14px;
+  }
+
+  .menu {
+    gap: 10px 14px;
+  }
+
+  .menu a {
+    font-size: 10px;
+  }
+
+  .menu .menu-contato {
+    padding: 7px 10px;
+  }
+
+  .hero {
+    padding: 45px 22px 60px;
+  }
+
+  .hero-imagem {
+    max-width: 235px;
+  }
+
+  .hero-imagem img {
+    height: 295px;
+  }
+
+  .hero-texto h1 {
+    font-size: 37px;
+  }
+
+  .secao {
+    padding: 65px 22px;
+  }
+
+  .ajuda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abordagem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abordagem-destaque {
+    padding: 25px 20px;
+  }
+
+  .frase-destaque {
+    padding: 55px 20px;
+  }
+
+  .faq-item summary {
+    padding: 18px;
+    font-size: 13px;
+  }
+
+  .faq-item p {
+    padding: 0 18px 18px;
+  }
+
+  .contato {
+    padding: 70px 22px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 13px 17px;
+  }
+
+  .whatsapp {
+    width: 49px;
+    height: 49px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
